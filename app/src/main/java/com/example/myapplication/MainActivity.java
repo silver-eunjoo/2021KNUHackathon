@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
