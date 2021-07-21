@@ -5,6 +5,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -66,4 +68,16 @@ public class MainActivity extends FragmentActivity {
         });
     }
 
+    public void ClickButton1(View view) {
+        // Toast.makeText(getApplicationContext(),"버튼을 눌렀습니다.", Toast.LENGTH_LONG).show();
+        setContentView(R.layout.text_write);
+    }
+
+    public void write_success(View view) {
+        setContentView(R.layout.fragment_home);
+    }
+
+    public void write_cancle(View view) {
+        setContentView(R.layout.fragment_home);
+    }
 }
