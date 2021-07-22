@@ -17,13 +17,13 @@ public class Sugang_won_a {
 		won_a_name = new ArrayList<String>();
 		
 		//파일 경로 조정필요
-		String currentProjPath = "/Users/silver/AndroidStudioProjects";
+		String currentProjPath = "";
 		try {
 			currentProjPath = new File(".").getCanonicalPath();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String currentFilePath = currentProjPath + "/new_won_a.txt";
+		String currentFilePath = currentProjPath + "/app/sugang/new_won_a.txt";
 		//
 		
 		Scanner inputStream = null;

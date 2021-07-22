@@ -18,13 +18,13 @@ public class Sugang_dehakwon {
 		dehakwon_name = new ArrayList<String>();
 		
 		//파일 경로 조정필요
-		String currentProjPath = "/Users/silver/AndroidStudioProjects";
+		String currentProjPath = "";
 		try {
 			currentProjPath = new File(".").getCanonicalPath();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String currentFilePath = currentProjPath + "/new_dehakwon.txt";
+		String currentFilePath = currentProjPath + "/app/sugang/new_dehakwon.txt";
 		///Users/silver/AndroidStudioProjects/new_dehakwon.txt
 		
 		Scanner inputStream = null;

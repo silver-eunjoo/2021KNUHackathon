@@ -17,14 +17,14 @@ public class Sugang_wongyuk {
 		wongyuk_name = new ArrayList<String>();
 		
 		//파일 경로 조정필요
-		String currentProjPath = "/Users/silver/AndroidStudioProjects";
+		String currentProjPath = "";
 		try {
 			currentProjPath = new File(".").getCanonicalPath();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String currentFilePath = currentProjPath + "/new_wongyuk.txt";
-		//
+		String currentFilePath = currentProjPath + "/app/sugang/new_wongyuk.txt";
+		System.out.println(currentFilePath);
 		
 		Scanner inputStream = null;
 		try {
