@@ -18,7 +18,6 @@ public class LoadingActivity extends Activity {
             @Override
             public void run() {
                 Intent intent = new Intent(LoadingActivity.this, MainActivity.class);
-
 //                Intent intent = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
