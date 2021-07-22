@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="notifications_category"
+        app:title="알림">
+        <SwitchPreferenceCompat
+            android:key="notifications"
+            app:title="알림 허용" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="help_category"
+        app:title="문의">
+        <Preference
+            android:key="feedback"
+            android:summary="개발자에게 피드백 보내기"
+            app:title="피드백 보내기"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
