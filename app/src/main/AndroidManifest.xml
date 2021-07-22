@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
+
+        //추가코드 클래스 실행시킬떈 여기서 추가해줘야됩니다
+        <activity android:name=".write"/>
     </application>
 
 </manifest>
