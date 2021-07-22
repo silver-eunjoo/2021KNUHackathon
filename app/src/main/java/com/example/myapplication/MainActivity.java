@@ -8,9 +8,19 @@ import android.os.Bundle;
 import android.widget.TabHost;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity {
 
     TabLayout tabs;
 
@@ -41,19 +51,18 @@ public class MainActivity extends AppCompatActivity {
         tabs.addTab(tabs.newTab().setText("Alarm"));
         tabs.addTab(tabs.newTab().setText("Setting"));
 
-        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
                 Fragment selected = null;
-
                 if(position == 0)
                     selected = home;
                 else if(position == 1)
                     selected = post;
-                else if(position == 2) {
+                else if(position == 2)
                     selected = plan;
-                } else if(position == 3)
+                else if(position == 3)
                     selected = alarm;
                 else if(position == 4)
                     selected = setting;
@@ -68,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
+    }
+
+    public void onFragmentChange(int index){
+        if(index == 0 ) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, post).commit();
+        }
     }
 
     private long lastTimeBackPressed;

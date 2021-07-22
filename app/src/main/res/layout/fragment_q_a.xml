@@ -9,7 +9,7 @@
     tools:ignore="ExtraText">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/writebutton"
+        android:id="@+id/writebutton_qa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
@@ -20,4 +20,3 @@
         tools:ignore="OnClick" />
 
 </FrameLayout>
-
