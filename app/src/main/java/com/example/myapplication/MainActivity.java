@@ -49,8 +49,10 @@ public class MainActivity extends AppCompatActivity {
         alarm = new Alarm();
         setting = new Setting();
 
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.container, home).commit();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.container, home).commit();
+        //getSupportFragmentManager().beginTransaction().add(R.id.container, home).commit();
 
         tabs = findViewById(R.id.tabs);
         tabs.addTab(tabs.newTab().setText("Home"));
@@ -92,6 +94,13 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, post).commit();
         }
     }
+
+    public void replaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, fragment).commit();
+    }
+
 
     private long lastTimeBackPressed;
 

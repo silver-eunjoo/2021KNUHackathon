@@ -23,11 +23,11 @@ import java.util.Calendar;
 public class write extends AppCompatActivity {
 
     public String fname = null;
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.text_write);
+
         ImageButton back = (ImageButton)findViewById(R.id.backbtn);
         Button no_name = (Button)findViewById(R.id.button);
         Button okay = (Button) findViewById(R.id.button2);
@@ -122,5 +122,4 @@ public class write extends AppCompatActivity {
         fragmentTransaction.replace(R.id.window, fragment);
         fragmentTransaction.commit();
     }
-
 }

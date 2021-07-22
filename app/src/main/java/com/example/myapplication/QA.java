@@ -36,6 +36,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class QA extends Fragment implements View.OnClickListener {
 
+
     String fname = null;
     String text = null;
     String text2 = null;
@@ -73,7 +74,6 @@ public class QA extends Fragment implements View.OnClickListener {
 
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,7 +98,6 @@ public class QA extends Fragment implements View.OnClickListener {
         //Intent 부분으로 write 클래스 작동시킵니다
         Intent intent = new Intent(getContext(),write.class);
         startActivity(intent);
-
 
     }
 

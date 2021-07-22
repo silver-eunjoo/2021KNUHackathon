@@ -26,6 +26,10 @@ public class Post extends Fragment {
     private QA qa;
     private TP tp;
 
+    public static Post newInstance(){
+        return new Post();
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -34,6 +34,11 @@ public class Plan extends Fragment {
     String userID = "";
     Toolbar myToolbar;
 
+    public static Plan newInstance(){
+        return new Plan();
+    }
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +75,9 @@ public class Plan extends Fragment {
 //            name = extra.getString("userName");
 //            userID = extra.getString("userID");
 //        }
-        myToolbar.setTitle(name + "님의 달력 일기장");
+     
+      //myToolbar.setTitle(name + "님의 달력 일기장");
+
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
