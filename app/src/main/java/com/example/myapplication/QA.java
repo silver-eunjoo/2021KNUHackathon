@@ -15,6 +15,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class QA extends Fragment implements View.OnClickListener {
 
+    public static QA newInstance(){
+        return new QA();
+    }
+
     write wr = new write();
 
     @Override
@@ -36,7 +40,11 @@ public class QA extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        getActivity().setContentView(R.layout.text_write);
+
+        //Intent 부분으로 write 클래스 작동시킵니다
+        Intent intent = new Intent(getContext(),write.class);
+        startActivity(intent);
+
     }
 
     /*** // To main

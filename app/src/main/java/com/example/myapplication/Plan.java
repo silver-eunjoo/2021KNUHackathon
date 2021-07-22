@@ -2,6 +2,7 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -31,6 +32,11 @@ public class Plan extends Fragment {
     public EditText contextEditText;
     String name = "noName";
     String userID = "";
+    Toolbar myToolbar;
+
+    public static Plan newInstance(){
+        return new Plan();
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +48,11 @@ public class Plan extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_plan, container, false);
+
+        myToolbar = (Toolbar) view.findViewById(R.id.toolbar_plan);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(myToolbar);
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         calendarView=view.findViewById(R.id.calendarView);
         diaryTextView=view.findViewById(R.id.diaryTextView);
@@ -63,7 +74,7 @@ public class Plan extends Fragment {
 //            name = extra.getString("userName");
 //            userID = extra.getString("userID");
 //        }
-//        textView3.setText(name + "님의 달력 일기장");
+        //myToolbar.setTitle(name + "님의 달력 일기장");
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override

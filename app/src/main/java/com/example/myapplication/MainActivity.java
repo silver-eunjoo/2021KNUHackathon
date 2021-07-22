@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     TabLayout tabs;
 
@@ -41,8 +41,10 @@ public class MainActivity extends FragmentActivity {
         alarm = new Alarm();
         setting = new Setting();
 
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.container, home).commit();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.container, home).commit();
+        //getSupportFragmentManager().beginTransaction().add(R.id.container, home).commit();
 
         tabs = findViewById(R.id.tabs);
         tabs.addTab(tabs.newTab().setText("Home"));
@@ -84,6 +86,13 @@ public class MainActivity extends FragmentActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.container, post).commit();
         }
     }
+
+    public void replaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container, fragment).commit();
+    }
+
 
     private long lastTimeBackPressed;
 

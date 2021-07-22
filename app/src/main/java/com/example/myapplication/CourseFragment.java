@@ -8,9 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +33,10 @@ public class CourseFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    public static CourseFragment newInstance(){
+        return new CourseFragment();
+    }
 
     public CourseFragment() {
         // Required empty public constructor
@@ -67,6 +77,11 @@ public class CourseFragment extends Fragment {
     private String courseUniversity ="";
     private String courseArea = "";
 
+    private ListView courseListView;
+    private CourseListAdapter adapter;
+    private List<Course> courseList;
+
+
     @Override
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
@@ -92,7 +107,25 @@ public class CourseFragment extends Fragment {
 
             }
         });
+
+//        Button searchButton = (Button) getView().findViewById(R.id.searchButton);
+//        searchButton.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                new BackgroundTak().execute();10.07
+//            }
+//
+//        });
+
+        courseListView = (ListView) getView().findViewById(R.id.courseListView);
+        courseList = new ArrayList<Course>();
+        adapter = new CourseListAdapter(getContext().getApplicationContext(), courseList);
+        courseListView.setAdapter(adapter);
     }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
