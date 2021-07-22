@@ -3,6 +3,8 @@ package com.example.myapplication;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -16,6 +18,8 @@ import android.view.ViewGroup;
 import com.google.android.material.tabs.TabLayout;
 
 public class Post extends Fragment {
+
+    Toolbar myToolbar;
 
     private ViewPager viewPager;
 
@@ -31,6 +35,11 @@ public class Post extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_post, container, false);
+
+        myToolbar = (Toolbar) view.findViewById(R.id.toolbar_post);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(myToolbar);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+        myToolbar.setTitle("게시판");
 
         qa = new QA();
         tp = new TP();
