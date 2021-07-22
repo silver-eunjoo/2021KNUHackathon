@@ -20,4 +20,9 @@ public class Course {
     public void setCourseTitle(String courseTitle) {
         this.courseTitle = courseTitle;
     }
+
+    public Course(String coursenum, String courseTitle) {
+        this.coursenum = coursenum;
+        this.courseTitle = courseTitle;
+    }
 }
