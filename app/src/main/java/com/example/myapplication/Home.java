@@ -64,6 +64,8 @@ public class Home extends Fragment {
             }
         });
 
+        return view;
+    }
 }
 //
 //    @Override
@@ -109,8 +111,4 @@ public class Home extends Fragment {
 //            }
 //        });
 
-
-        return view;
-    }
-}
 
