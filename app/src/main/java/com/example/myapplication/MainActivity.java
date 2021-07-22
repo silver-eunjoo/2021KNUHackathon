@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     TabLayout tabs;
 
