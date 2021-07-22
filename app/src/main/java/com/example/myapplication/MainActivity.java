@@ -23,12 +23,20 @@ import com.google.android.material.tabs.TabLayout;
 public class MainActivity extends AppCompatActivity {
 
     TabLayout tabs;
-
+    public int count;
     Home home;
     Post post;
     Plan plan;
     Alarm alarm;
     Setting setting;
+
+    public int get_count (){
+        return count;
+    }
+
+    public void set_count (int num){
+        this.count = num;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,4 +114,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "'뒤로' 버튼을 한 번 더 눌러 종료합니다.", Toast.LENGTH_SHORT);
         lastTimeBackPressed = System.currentTimeMillis();
     }
+
+
 }
