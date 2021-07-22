@@ -1,13 +1,16 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.widget.TabHost;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     TabLayout tabs;
 
@@ -28,6 +31,7 @@ public class MainActivity extends FragmentActivity {
         alarm = new Alarm();
         setting = new Setting();
 
+
         getSupportFragmentManager().beginTransaction().add(R.id.container, home).commit();
 
         tabs = findViewById(R.id.tabs);
@@ -37,18 +41,19 @@ public class MainActivity extends FragmentActivity {
         tabs.addTab(tabs.newTab().setText("Alarm"));
         tabs.addTab(tabs.newTab().setText("Setting"));
 
-        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 int position = tab.getPosition();
                 Fragment selected = null;
+
                 if(position == 0)
                     selected = home;
                 else if(position == 1)
                     selected = post;
-                else if(position == 2)
+                else if(position == 2) {
                     selected = plan;
-                else if(position == 3)
+                } else if(position == 3)
                     selected = alarm;
                 else if(position == 4)
                     selected = setting;
@@ -65,4 +70,16 @@ public class MainActivity extends FragmentActivity {
         });
     }
 
+    private long lastTimeBackPressed;
+
+    @Override
+    public void onBackPressed(){
+        if(System.currentTimeMillis()-lastTimeBackPressed<1500)
+        {
+            finish();
+            return;
+        }
+        Toast.makeText(this, "'뒤로' 버튼을 한 번 더 눌러 종료합니다.", Toast.LENGTH_SHORT);
+        lastTimeBackPressed = System.currentTimeMillis();
+    }
 }

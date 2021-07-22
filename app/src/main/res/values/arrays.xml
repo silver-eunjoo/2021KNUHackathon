@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="universityArea">
+        <item>교양</item>
+        <item>전공</item>
+        <item>원격</item>
+        <item>원어</item>
+    </string-array>
+
+    <string-array name = "graduateArea">
+        <item>강의</item>
+    </string-array>
+</resources>
