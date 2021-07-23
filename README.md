@@ -12,7 +12,7 @@
 ##  <프로토타입>
 
 ### __로딩화면__ 
-![loading](https://user-images.githubusercontent.com/72423836/126732447-fb429f6a-540d-4be8-9795-001948852466.jpg)
+![loading](https://user-images.githubusercontent.com/72423836/126732570-673c40c9-4f13-4562-ae41-7b42d95d45d9.jpg)
 
 
 ### __홈 화면__
