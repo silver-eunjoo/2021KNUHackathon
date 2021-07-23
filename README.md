@@ -13,99 +13,92 @@
 
 ### __로딩화면__ 
 ![loading](https://user-images.githubusercontent.com/72423836/126732612-2693ecee-d3b2-4897-bdae-f13a925e41b3.jpg)
-
-
+<br>로딩 화면엔 코끼리가 학사모를 쓴 로고와, 기억해조의 어플리케이션 이름인 '우리끼리'를 보여주었다.
+<br><br>
 ### __홈 화면__
-![home](https://user-images.githubusercontent.com/72423836/126732646-75a3a448-d2b0-4840-9ede-86b837893274.jpg)
 
-
+<br>'우리끼리' 어플의 주요 기능을 한 눈에 볼 수 있게 하였다.
+<br><br>
 ### __게시판 화면__
-![게시판](https://user-images.githubusercontent.com/72423836/126732100-64ddc09e-4ae5-4b39-8bad-9bde99721245.jpg)
+![게시판](https://user-images.githubusercontent.com/72423836/126732791-7a92bee7-7298-43c0-b70c-11e0cda60bbf.jpg)
+<br>각각의 수업을 터치하면 해당 수업의 게시판으로 화면이 이동한다. 이때, 편집하기를 눌러 게시판을 편집할 수 있다.  각각의 게시판에는 '질문' 탭과 '팀플 및 스터디' 탭이 존재한다. '질문' 탭에서는 학생들끼리 강연 일정에 관련한 
 
-
+<br><br>
 ### __게시판 편집 화면__
-![게시판편집](https://user-images.githubusercontent.com/72423836/126732111-baa61e7c-f113-4c84-a6ea-896f17d5dff2.jpg)
+![게시판편집](https://user-images.githubusercontent.com/72423836/126732812-d1f7d673-fc14-4728-87bb-7bd73b059844.jpg)
+<br>하나의 강의마다 하나의 게시판이 존재하므로 학생들은 매 학기마다 본인이 듣는 수업에 따라 활동할 게시판을 편집할 수 있다.
 
-
+<br><br>
 ### __질문 게시판 화면__
-![질문게시판](https://user-images.githubusercontent.com/72423836/126732135-f78dc64e-0442-4779-8259-b66365951914.jpg)
-
-
+![질문게시판](https://user-images.githubusercontent.com/72423836/126732825-1c911cb2-1d84-4be6-917b-fd37af08186d.jpg)
+<br>같은 수업을 수강하는 학생들끼리 간단한 질문을 주고받을 수 있는 게시판 화면이다.
+<br><br>
 ### __질문 게시판의 게시글 화면__
-![질문게시판_게시글](https://user-images.githubusercontent.com/72423836/126732143-69247ed2-f599-4cda-9697-f65586f4187d.jpg)
-
-
+![질문게시판_게시글](https://user-images.githubusercontent.com/72423836/126732839-1c002004-b474-45a7-b65d-5ae833416497.jpg)
+<br>
+<br><br>
 ### __질문 게시판의 내용 입력 화면__
-![질문게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732153-40b16030-c2ae-48d4-b8b5-ec55af6d942c.jpg)
+![질문게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732856-59e4546e-3783-4640-8d82-56e3c7cb719c.jpg)
 
 
 ### __'팀플 및 스터디' 게시판 화면__
-![팀플및스터디 게시판](https://user-images.githubusercontent.com/72423836/126732162-828b56da-df91-4952-bd6b-1b5fc91c6699.jpg)
-
+![팀플및스터디 게시판](https://user-images.githubusercontent.com/72423836/126732867-7e49a4c5-6ca6-4b45-9d28-949a9727ab35.jpg)
 
 ### __'팀플 및 스터디' 게시판의 게시글 화면__
-![팀플및스터디게시판_게시글](https://user-images.githubusercontent.com/72423836/126732172-af21cf7f-ae58-44dd-9d9d-71d70f8e7f08.jpg)
-
+![팀플및스터디게시판_게시글](https://user-images.githubusercontent.com/72423836/126732874-7b3711c0-416f-4f5e-b403-2356636d20f3.jpg)
 
 ### __'팀플 및 스터디' 게시판의 내용 입력 화면__
-![팀플및스터디게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732227-edbf55d2-105a-46e0-82ba-c1370a8a2b84.jpg)
-
+![팀플및스터디게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732883-649fc34c-1304-406b-8a5a-64fd0dc3df8e.jpg)
 
 ### __일정 화면__
-![일정](https://user-images.githubusercontent.com/72423836/126732243-49474757-c15a-4488-995c-0c5f64623f34.jpg)
-
+![일정](https://user-images.githubusercontent.com/72423836/126732891-3d9bc89b-5517-4847-b661-4460d6fa51c6.jpg)
 
 ### -__일정 수정 화면__
-![일정수정](https://user-images.githubusercontent.com/72423836/126732256-f1c8d6f0-8cab-4dc8-b6a3-e50d0779d740.jpg)
+![일정수정](https://user-images.githubusercontent.com/72423836/126732904-4a5cbf83-d7c8-4210-b74c-afd2a1930612.jpg)
 
+
+<br><br>
 ##  <실제 구현 화면>
 
 ### __로딩화면__ 
-![loading](https://user-images.githubusercontent.com/72423836/126731714-199bb4a3-3ce9-4b63-96de-852ebc59091c.jpg)
 
 
 ### __홈 화면__
-![home](https://user-images.githubusercontent.com/72423836/126732085-f7d2029d-dd4d-4708-9ced-3f4cf81b598e.jpg)
 
 
 ### __게시판 화면__
-![게시판](https://user-images.githubusercontent.com/72423836/126732100-64ddc09e-4ae5-4b39-8bad-9bde99721245.jpg)
+
 
 
 ### __게시판 편집 화면__
-![게시판편집](https://user-images.githubusercontent.com/72423836/126732111-baa61e7c-f113-4c84-a6ea-896f17d5dff2.jpg)
+
 
 
 ### __질문 게시판 화면__
-![질문게시판](https://user-images.githubusercontent.com/72423836/126732135-f78dc64e-0442-4779-8259-b66365951914.jpg)
+
 
 
 ### __질문 게시판의 게시글 화면__
-![질문게시판_게시글](https://user-images.githubusercontent.com/72423836/126732143-69247ed2-f599-4cda-9697-f65586f4187d.jpg)
+
 
 
 ### __질문 게시판의 내용 입력 화면__
-![질문게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732153-40b16030-c2ae-48d4-b8b5-ec55af6d942c.jpg)
+
 
 
 ### __'팀플 및 스터디' 게시판 화면__
-![팀플및스터디 게시판](https://user-images.githubusercontent.com/72423836/126732162-828b56da-df91-4952-bd6b-1b5fc91c6699.jpg)
 
 
 ### __'팀플 및 스터디' 게시판의 게시글 화면__
-![팀플및스터디게시판_게시글](https://user-images.githubusercontent.com/72423836/126732172-af21cf7f-ae58-44dd-9d9d-71d70f8e7f08.jpg)
 
 
 ### __'팀플 및 스터디' 게시판의 내용 입력 화면__
-![팀플및스터디게시판_내용입력](https://user-images.githubusercontent.com/72423836/126732227-edbf55d2-105a-46e0-82ba-c1370a8a2b84.jpg)
 
 
 ### __일정 화면__
-![일정](https://user-images.githubusercontent.com/72423836/126732243-49474757-c15a-4488-995c-0c5f64623f34.jpg)
 
 
 ### -__일정 수정 화면__
-![일정수정](https://user-images.githubusercontent.com/72423836/126732256-f1c8d6f0-8cab-4dc8-b6a3-e50d0779d740.jpg)
 
 
 # 5. 영향
