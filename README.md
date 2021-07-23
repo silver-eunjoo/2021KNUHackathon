@@ -16,7 +16,7 @@
 
 
 ### __홈 화면__
-![home](https://user-images.githubusercontent.com/72423836/126732085-f7d2029d-dd4d-4708-9ced-3f4cf81b598e.jpg)
+![loading](https://user-images.githubusercontent.com/72423836/126732612-2693ecee-d3b2-4897-bdae-f13a925e41b3.jpg)
 
 
 ### __게시판 화면__
