@@ -12,11 +12,11 @@
 ##  <프로토타입>
 
 ### __로딩화면__ 
-![loading](https://user-images.githubusercontent.com/72423836/126732570-673c40c9-4f13-4562-ae41-7b42d95d45d9.jpg)
+![loading](https://user-images.githubusercontent.com/72423836/126732612-2693ecee-d3b2-4897-bdae-f13a925e41b3.jpg)
 
 
 ### __홈 화면__
-![loading](https://user-images.githubusercontent.com/72423836/126732612-2693ecee-d3b2-4897-bdae-f13a925e41b3.jpg)
+![home](https://user-images.githubusercontent.com/72423836/126732646-75a3a448-d2b0-4840-9ede-86b837893274.jpg)
 
 
 ### __게시판 화면__
